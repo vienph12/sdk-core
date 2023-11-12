@@ -18,6 +18,8 @@ export enum ChainId {
   BASE = 8453,
   ONUS = 1975,
   ONUS_TESTNET = 1945,
+  OPBNB = 204,
+  OPBNB_TESTNET = 5611,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -38,6 +40,8 @@ export const SUPPORTED_CHAINS = [
   ChainId.BASE_GOERLI,
   ChainId.ONUS,
   ChainId.ONUS_TESTNET,
+  ChainId.OPBNB,
+  ChainId.OPBNB_TESTNET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -51,4 +55,5 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ONUS = 'ONUS',
+  OPBNB = 'BNB',
 }

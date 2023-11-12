@@ -176,6 +176,29 @@ const ONUS_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x169972981f90AAC207588bC9E2cBc666f4516975',
 }
 
+/**
+ * opBNB v3 addresses
+ */
+const OPBNB_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xd38e34E05Df3e04901bB69792869582c704399b4',
+  multicallAddress: '0x9EF90Fb3FcC5F65f9946b4f7c23c5BbA57F99A96',
+  quoterAddress: '0x58fF63FA8ee9fDCd1C1Cb4ED3A72Bd636efF7fe5',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '0xe57D8DF62E7B688b41300cC0943468cb4e099ceB',
+  tickLensAddress: '0x81f3752394f347CFe7B992AE4876D2483272b552',
+  swapRouter02Address: '0xaAD524f4b69ddCD0f5e074B31d5aB790d5760be4',
+}
+
+const OPBNB_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xBC1658Ac1C077ab8dbd1898D6240f35EF02D5Ea2',
+  multicallAddress: '0x3B58AaBe70C89A134c9c44a997169EeF24a32965',
+  quoterAddress: '0x93ADd318C660D6d6C04A5e19FC5492F199895E97',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '0xFC55E53e34a9EdFE13CB8dBaEB1Fc71094E6D700',
+  tickLensAddress: '0x802f272C87Bc6C93401E2900AC3EF697f3105E9b',
+  swapRouter02Address: '0x51784599CA286b09f074Ec312887AFbe6188918b',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -194,6 +217,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.ONUS]: ONUS_ADDRESSES,
   [ChainId.ONUS_TESTNET]: ONUS_TESTNET_ADDRESSES,
+  [ChainId.OPBNB]: OPBNB_ADDRESSES,
+  [ChainId.OPBNB_TESTNET]: OPBNB_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
